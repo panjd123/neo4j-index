@@ -1,8 +1,10 @@
 # Neo4j shortest path without 2hop index
 
+###  Warning!!!: This script will delete all existing data in the Neo4j database.
+
 ## How to run
 
-Sure, here is the translation:
+If you have already installed Neo4j, Neo4j Graph Data Science and Python driver, you can skip to step 10.
 
 1. Pull the latest Neo4j source code from https://github.com/neo4j/neo4j.
 2. Download the binary executable file for JDK 17 from https://www.oracle.com/java/technologies/downloads/#java17.
@@ -50,7 +52,11 @@ Sure, here is the translation:
     ```bash
     neo4j-admin server start
     # Wait for around 10 seconds, allowing Neo4j to start
+
+    # Remember to set NEO4J_HOME in the environment variables!!!, like export  NEO4J_HOME = /path/to/neo4j-community-5.13.0-SNAPSHOT
+
     python main.py # Enter the Neo4j password; the password won't be displayed, similar to most password entry methods on Linux
+
     neo4j-admin server stop
     ```
 
