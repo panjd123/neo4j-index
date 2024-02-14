@@ -1,6 +1,6 @@
 # Neo4j shortest path without 2hop index
 
-###  Warning!!!: This script will delete all existing data in the Neo4j database.
+###  Warning!!!: This script may delete all existing data in the Neo4j database.
 
 ## How to run
 
@@ -60,4 +60,6 @@ If you have already installed Neo4j, Neo4j Graph Data Science and Python driver,
     neo4j-admin server stop
     ```
 
-11. View the results in `results/neo4j_exp_case_*.csv` and terminal output.
+11. View the results in `results` and terminal output.
+
+> For the graph data of `["amazon", "book", "hyves", "skitter"]`, you can contact the author for access.
